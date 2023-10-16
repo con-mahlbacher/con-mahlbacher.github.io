@@ -1,0 +1,18 @@
+body {
+    background-color: #526b81;
+    font-family: Georgia;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+p {
+    color: aliceblue;
+}
+
+img {
+    width:432px;
+    height:540px; 
+    border:2px solid aliceblue;
+}
