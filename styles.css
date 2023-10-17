@@ -5,12 +5,12 @@ body {
 
 .leftdiv {
     float: left;
-    width: 50%;
+    width: 40%;
 }
 
 .rightdiv {
     float: right;
-    width: 50%
+    width: 40%
 }
 
 div {
