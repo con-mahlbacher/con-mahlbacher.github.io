@@ -15,6 +15,7 @@ body {
 
 div {
     padding : 1%;
+    border: solid black;
 }
 
 h1 {
