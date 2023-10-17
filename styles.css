@@ -3,6 +3,18 @@ body {
     font-family: Georgia;
 }
 
+.leftdiv {
+    float: left;
+}
+
+.rightdiv {
+    float: right;
+}
+
+div {
+    padding : 1%;
+}
+
 h1 {
     color: aliceblue;
 }
