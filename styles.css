@@ -6,7 +6,7 @@ body {
     grid-template-rows: [topline] 20% [row_separator] auto [bottomline];
 }
 
-header {
+.namespot {
     text-align: center;
     grid-row-start: topline;
     grid-row-end: row_separator;
