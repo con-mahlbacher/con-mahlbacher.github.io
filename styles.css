@@ -31,6 +31,7 @@ body {
 
 div {
     padding : 1%;
+    display: grid;
 }
 
 h1 {
