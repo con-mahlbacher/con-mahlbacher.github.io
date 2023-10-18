@@ -1,20 +1,22 @@
 body {
     background-color: #526b81;
     font-family: Georgia;
+    display: grid;
+    grid-template-columns: [lside] auto [separator] 432px [rside];
 }
 
 header {
     text-align: center;
 }
 
-.leftdiv {
-    float: left;
-    width: 40%;
+.mainpart {
+    grid-column-start: lside;
+    grid-column-end: separator;
 }
 
-.rightdiv {
-    float: right;
-    width: 40%
+.sidebar {
+    grid-column-start: separator;
+    grid-column-end: rside;
 }
 
 div {
