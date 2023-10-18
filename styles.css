@@ -2,21 +2,30 @@ body {
     background-color: #526b81;
     font-family: Georgia;
     display: grid;
-    grid-template-columns: [lside] auto [separator] 432px [rside];
+    grid-template-columns: [lside] auto [col_separator] 432px [rside];
+    grid-template-rows: [topline] 20% [row_separator] auto [bottomline];
 }
 
 header {
     text-align: center;
+    grid-row-start: topline;
+    grid-row-end: row_separator;
+    grid-column-start: lside;
+    grid-column-end: rside;
 }
 
 .mainpart {
     grid-column-start: lside;
-    grid-column-end: separator;
+    grid-column-end: col_separator;
+    grid-row-start: row_separator;
+    grid-row-end: bottomline;
 }
 
 .sidebar {
     grid-column-start: separator;
     grid-column-end: rside; 
+    rid-row-start: row_separator;
+    grid-row-end: bottomline;
 }
 
 div {
