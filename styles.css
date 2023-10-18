@@ -16,7 +16,7 @@ header {
 
 .sidebar {
     grid-column-start: separator;
-    grid-column-end: rside;
+    grid-column-end: rside; 
 }
 
 div {
