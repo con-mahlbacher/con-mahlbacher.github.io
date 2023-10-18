@@ -2,7 +2,7 @@ body {
     background-color: #526b81;
     font-family: Georgia;
     display: grid;
-    grid-template-columns: [lside] 10px [fake_ass_line] auto [col_separator] 432px [rside];
+    grid-template-columns: [lside] 30px [fake_line] auto [col_separator] 432px [borderzone] 30px [rside];
     grid-template-rows: [topline] 20% [row_separator] auto [bottomline];
 }
 
@@ -15,7 +15,8 @@ body {
 }
 
 .mainpart {
-    grid-column-start: lside;
+    text-align: center;
+    grid-column-start: fake_line;
     grid-column-end: col_separator;
     grid-row-start: row_separator;
     grid-row-end: bottomline;
@@ -23,7 +24,7 @@ body {
 
 .sidebar {
     grid-column-start: col_separator;
-    grid-column-end: rside; 
+    grid-column-end: borderzone; 
     grid-row-start: row_separator;
     grid-row-end: bottomline;
 }
