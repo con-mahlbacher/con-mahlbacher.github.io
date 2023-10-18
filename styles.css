@@ -21,7 +21,6 @@ header {
 
 div {
     padding : 1%;
-    border: solid black;
 }
 
 h1 {
@@ -36,4 +35,12 @@ img {
     width:432px;
     height:540px; 
     border:2px solid aliceblue;
+}
+
+a:link {
+    color:lightgray
+}
+
+a:visited {
+    color:lightpink
 }
