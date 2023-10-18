@@ -3,7 +3,7 @@ body {
     font-family: Georgia;
     display: grid;
     grid-template-columns: [lside] 30px [fake_line] auto [col_separator] 432px [borderzone] 30px [rside];
-    grid-template-rows: [topline] 20% [row_separator] auto [bottomline];
+    grid-template-rows: [topline] 10% [row_separator] auto [bottomline];
 }
 
 .namespot {
