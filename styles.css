@@ -3,6 +3,10 @@ body {
     font-family: Georgia;
 }
 
+header {
+    text-align: center;
+}
+
 .leftdiv {
     float: left;
     width: 40%;
