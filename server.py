@@ -11,7 +11,8 @@ def hello_world(request):
     return "render_to_response('templates/hello.jinja2', {'name':'Tutorialspoint'}, request=request)"
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT"))
+    #port = int(os.environ.get("PORT"))
+    port = 6543
     with Configurator() as config:
         #config.include('pyramid_jinja2')
         #config.add_jinja2_renderer(".html")
@@ -19,6 +20,6 @@ if __name__ == '__main__':
         config.add_view(hello_world, route_name='hello')
         #config.scan()
         app = config.make_wsgi_app()
-    app.config["DEBUG"] = True
+    #app.config["DEBUG"] = True
     server = make_server('0.0.0.0', port, app)
     server.serve_forever()
