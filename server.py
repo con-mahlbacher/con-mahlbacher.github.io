@@ -4,7 +4,6 @@ from pyramid.response import Response
 from pyramid.renderers import render
 from pyramid.view import view_config
 from pyramid.renderers import render_to_response
-from pyramid import pyramid_jinja2
 import os
 
 #@view_config(route_name='hello')
