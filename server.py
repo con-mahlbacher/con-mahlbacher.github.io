@@ -19,5 +19,6 @@ if __name__ == '__main__':
         config.add_view(hello_world, route_name='hello')
         #config.scan()
         app = config.make_wsgi_app()
+    app.config["DEBUG"] = True
     server = make_server('0.0.0.0', port, app)
     server.serve_forever()
