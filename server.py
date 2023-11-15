@@ -6,17 +6,23 @@ from pyramid.view import view_config
 from pyramid.renderers import render_to_response
 import os
 
-my_html = '<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>Frickoff</title> </head> <body> Frick Off </body> </html>'
-
+file_name = 'index.html'
+my_html = ''
+for line in open(file_name, 'r'):
+    my_html += line
 
 #@view_config(route_name='hello')
 def hello_world(request):
+    print("_________________________________________________________________________________")
     print(request.response)
+    print("_________________________________________________________________________________")
+    print(my_html)
+    print("__________________________________________________________________________________")
     return Response(my_html)
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT"))
-    #port = 6543
+    #port = int(os.environ.get("PORT"))
+    port = 6543
     with Configurator() as config:
         #config.include('pyramid_jinja2')
         #config.add_jinja2_renderer(".html")
